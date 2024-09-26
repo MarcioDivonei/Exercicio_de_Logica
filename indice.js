@@ -5,7 +5,7 @@ function indicesMaiorMenor(array) {
     let indiceMaior = 0;
     let indiceMenor = 0;
 
-    for (let i = 1; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         if (array[i] > array[indiceMaior]) {
             indiceMaior = i;
         }
@@ -17,7 +17,4 @@ function indicesMaiorMenor(array) {
     return { indiceMaior, indiceMenor };
 }
 
-
-const array = [13, 16, 4, 12, 9];
-const indices = indicesMaiorMenor(array);
-console.log(indices); 
+module.exports = indicesMaiorMenor;
